@@ -6,4 +6,5 @@ import com.projeto.todolist.entities.Todo;
 
 public interface TodoRepository extends JpaRepository<Todo, Long> {
 
+    public Todo findByNome(String nome);
 }
