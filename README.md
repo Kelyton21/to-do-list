@@ -55,29 +55,6 @@ API para gerenciamento de tarefas (To-dos), permitindo **criar**, **listar**, **
 - **descricao** *(string, opcional)*: Descrição detalhada da tarefa
 - **realizado** *(boolean)*: Status de conclusão da tarefa
 - **prioridade** *(integer)*: Nível de prioridade (1-5, onde 1 é mais alta)
----
-
-## 📚 Como Executar o Projeto
-1. Clone o repositório:
-git clone https://github.com/seuusuario/todo-list.git
-cd todo-list
-
-2. Configure o perfil de projeto do banco de dados (em application.properties)
-   - test
-   - dev
-3. Execute o projeto
-4. Acesse a documentação Swagger:
-   . http://localhost:8080/swagger-ui.html
-
-## Estrutura do projeto
-
-com.projeto.todolist
-├── controllers
-├── dto
-├── entities
-├── repositories
-├── services
-└── TodoListApplication.java
 --- 
 ### Passos para Execução
 
