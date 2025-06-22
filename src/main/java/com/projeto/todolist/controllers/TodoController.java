@@ -15,6 +15,7 @@ import com.projeto.todolist.services.TodoService;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/todos")
@@ -26,7 +27,7 @@ public class TodoController {
 
     @Operation(summary = "Cria uma nova tarefa", description = "Cria uma nova tarefa e retorna a lista completa de tarefas atualizada.")
     @PostMapping
-    public ResponseEntity<List<TodoDTO>> create(@RequestBody TodoDTO entity) {
+    public ResponseEntity<List<TodoDTO>> create(@RequestBody @Valid TodoDTO entity) {
         try{
             List<TodoDTO> todos = todoService.create(entity);
             return ResponseEntity.ok(todos);
